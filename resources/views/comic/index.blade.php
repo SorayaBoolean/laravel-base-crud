@@ -31,6 +31,7 @@
           <td>{{$comic->sale_date}}</td>
           <td>{{$comic->type}}</td>
           <td><a class="btn btn-primary" href="{{route('comics.show', ['comic'=> $comic->id])}}">Open</a></td>
+          <td><a class="btn btn-warning" href="{{route('comics.edit', ['comic'=>$comic])}}">Edit</a></td>
         </tr>
         
 
