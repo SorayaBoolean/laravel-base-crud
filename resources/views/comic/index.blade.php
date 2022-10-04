@@ -5,6 +5,8 @@
 @section('content')
 
     <div class="container">
+
+      <a class="btn btn-primary" href="{{route('comics.create')}}">New</a>
     <table class="table">
       <thead>
         <tr>
