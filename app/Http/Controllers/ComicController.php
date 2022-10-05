@@ -92,16 +92,14 @@ class ComicController extends Controller
     {
         $comic = Comic::find($id);
 
-        if ($comic) {
+        
             $data= $request->all();
             $comic->update($data);
             $comic->save();
 
-            return  redirect()->route('comics.show', ['comic'=> $comic]);
+            return  redirect()->route('comics.edit', ['comic'=> $comic]);
 
-        }else{
-            abort(404);
-        }
+       
 
     }
 

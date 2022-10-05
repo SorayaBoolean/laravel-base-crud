@@ -1,5 +1,5 @@
 @extends ('layout.app')
-@section ('title', 'Create your Comic')
+@section ('title', 'Edit your Comic')
 
 @section ('content')
 
